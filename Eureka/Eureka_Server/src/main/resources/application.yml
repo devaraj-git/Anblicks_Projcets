@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:8761} # Include the default port where the service will be started
+
+eureka:
+  client:
+    register-with-eureka: false # Informing the server not to register self in the service registry
+    fetch-registry: false
+  server:
+    registry-sync-retry-wait-ms: 0
